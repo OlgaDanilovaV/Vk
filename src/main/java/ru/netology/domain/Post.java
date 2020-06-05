@@ -1,19 +1,31 @@
 package ru.netology.domain;
 
 public class Post {
-    private int id; //id поста
-    private int ownerId; //id владельца
-    private int originalPostId; //первоначальный источник
-    private int originalOwnerId; //исходный владелец
-    private int canPin; //возможность закрепить запись
-    private int pinInfo; //инф о закрепленной записи
+    private int id;
+    private int ownerId;
+    private int originalPostId;
+    private int originalOwnerId;
+    private int createdById;
+    private int signerId;
+    private int date;
+    private int friendsOnly;
+    private int canPin;
+    private int isPinned;
+    private int canEdit;
+    private int canDelete;
+    private int markedAsAds;
+    private int postponedId;
+    private boolean isFavorite;
     private String text;
+    private String copyright;
+    private String postType;
+    private PostSource postSource;
+    private FromId fromId;
+    private ViewsInfo viewsInfo;
     private LikesInfo likesInfo;
     private RepostsInfo repostsInfo;
     private CommentsInfo commentsInfo;
     private Geolocation geolocation;
-    private int canEdit;
-    private int canDelete;
 
     public int getId() {
         return id;
@@ -47,6 +59,38 @@ public class Post {
         this.originalOwnerId = originalOwnerId;
     }
 
+    public int getCreatedById() {
+        return createdById;
+    }
+
+    public void setCreatedById(int createdById) {
+        this.createdById = createdById;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
     public int getCanPin() {
         return canPin;
     }
@@ -55,52 +99,12 @@ public class Post {
         this.canPin = canPin;
     }
 
-    public int getPinInfo() {
-        return pinInfo;
+    public int getIsPinned() {
+        return isPinned;
     }
 
-    public void setPinInfo(int pinInfo) {
-        this.pinInfo = pinInfo;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public LikesInfo getLikesInfo() {
-        return likesInfo;
-    }
-
-    public void setLinksInfo(LikesInfo linksInfo) {
-        this.likesInfo = likesInfo;
-    }
-
-    public RepostsInfo getRepostsInfo() {
-        return repostsInfo;
-    }
-
-    public void setRepostsInfo(RepostsInfo postInfo) {
-        this.repostsInfo = postInfo;
-    }
-
-    public CommentsInfo getCommentsInfo() {
-        return commentsInfo;
-    }
-
-    public void setCommentsInfo(CommentsInfo commentsInfo) {
-        this.commentsInfo = commentsInfo;
-    }
-
-    public Geolocation getGeolocation() {
-        return geolocation;
-    }
-
-    public void setGeolocation(Geolocation geolocation) {
-        this.geolocation = geolocation;
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
     }
 
     public int getCanEdit() {
@@ -117,5 +121,109 @@ public class Post {
 
     public void setCanDelete(int canDelete) {
         this.canDelete = canDelete;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public FromId getFromId() {
+        return fromId;
+    }
+
+    public void setFromId(FromId fromId) {
+        this.fromId = fromId;
+    }
+
+    public ViewsInfo getViewsInfo() {
+        return viewsInfo;
+    }
+
+    public void setViewsInfo(ViewsInfo viewsInfo) {
+        this.viewsInfo = viewsInfo;
+    }
+
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public RepostsInfo getRepostsInfo() {
+        return repostsInfo;
+    }
+
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
+    }
+
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
+
+    public Geolocation getGeolocation() {
+        return geolocation;
+    }
+
+    public void setGeolocation(Geolocation geolocation) {
+        this.geolocation = geolocation;
     }
 }

@@ -1,14 +1,23 @@
 package ru.netology.domain;
 
 public class Geolocation {
-    private String place;
+    private String type;
+    private Object place;
     private String coordinates;
 
-    public String getPlace() {
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Object getPlace() {
         return place;
     }
 
-    public void setPlace(String place) {
+    public void setPlace(Object place) {
         this.place = place;
     }
 
