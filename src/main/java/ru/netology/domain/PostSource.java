@@ -6,6 +6,7 @@ public class PostSource {
     private String data;
     private String url;
 
+
     public String getType() {
         return type;
     }

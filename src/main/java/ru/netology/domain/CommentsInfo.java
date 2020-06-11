@@ -7,6 +7,7 @@ public class CommentsInfo {
     private boolean canClose;
     private int canComment;
 
+
     public int getCount() {
         return count;
     }

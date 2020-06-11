@@ -27,6 +27,7 @@ public class Post {
     private CommentsInfo commentsInfo;
     private Geolocation geolocation;
 
+
     public int getId() {
         return id;
     }

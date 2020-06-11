@@ -6,6 +6,7 @@ public class LikesInfo {
     private int alreadyLike;
     private int canPublish;
 
+
     public int getCount() {
         return count;
     }

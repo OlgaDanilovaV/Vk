@@ -5,6 +5,7 @@ public class Geolocation {
     private Object place;
     private String coordinates;
 
+
     public String getType() {
         return type;
     }
